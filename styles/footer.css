@@ -1,0 +1,26 @@
+footer {
+    padding: 0 0 2em 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875em;
+}
+
+footer a {
+    color: #AAA;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #CCC;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+footer a:active {
+    color: #DDD;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

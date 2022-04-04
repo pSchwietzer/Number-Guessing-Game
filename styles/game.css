@@ -1,0 +1,74 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    display: none;
+}
+
+.display {
+    background-color: #151515;
+    width: 100%;
+    min-height: 8em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#statusInfo {
+    font-size: 0.9em;
+    width: max-content;
+}
+
+.input {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.input span {
+    animation: blinking 1000ms infinite;
+}
+
+@keyframes blinking {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    gap: 1em;
+}
+
+.keyboard button {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.keyboard button#close {
+    grid-column: span 3;
+    font-weight: 400;
+    font-size: 0.85em;
+}
+
+.keyboard button#submit {
+    font-weight: 400;
+}
+
+.svg--icon {
+    fill: #DDD;
+}
+
+button:hover .svg--icon {
+    fill: #EEE;
+}
+
+button:active .svg--icon {
+    fill: #FFF;
+}

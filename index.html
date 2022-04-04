@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Guess a Number Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Guess a Number</h1>
+        <div id="info">
+            <p>In this game you have to guess a number between a set range. You can guess 3 times.</p>
+            <div class="controls">
+                <h2>Controls</h2>
+                <h3>Info screen</h3>
+                <p class="key">Arrow Keys</p><p>Switch between difficulties</p>
+                <p class="key">Enter</p><p>Start the game</p>
+                <h3>Game</h3>
+                <p class="key">0-9</p><p>Enter numbers to input</p>
+                <p class="key">Enter</p><p>Submit guess / Restart game</p>
+                <p class="key">Backspace</p><p>Remove last character</p>
+                <p class="key">Delete</p><p>Delete all characters</p>
+                <p class="key">Escape</p><p>Close game and return to info</p>
+            </div>
+            <div class="difficulty">
+                <h2>Select Difficulty</h2>
+                <div class="difficultyButtons">
+                    <button class="active" id="diff1">Easy</button>
+                    <button id="diff2">Medium</button>
+                    <button id="diff3">Hard</button>
+                    <button id="diff4">Extreme</button>
+                </div>
+                <p id="difficultyInfo">Guess a random number between 0 and <span id="rangeNumber">10</span></p>
+            </div>
+            <button id="start">Start Game</button>
+        </div>
+        <div class="game" id="game">
+            <div class="display">
+                <p id="statusInfo">You can guess 3 more times!</p>
+                <p class="input" id="input"><span>_</span></p>
+            </div>
+            <div class="keyboard">
+                <button id="num1" class="keyBtn">1</button>
+                <button id="num2" class="keyBtn">2</button>
+                <button id="num3" class="keyBtn">3</button>
+                <button id="num4" class="keyBtn">4</button>
+                <button id="num5" class="keyBtn">5</button>
+                <button id="num6" class="keyBtn">6</button>
+                <button id="num7" class="keyBtn">7</button>
+                <button id="num8" class="keyBtn">8</button>
+                <button id="num9" class="keyBtn">9</button>
+                <button id="num0" class="keyBtn">0</button>
+                <button id="del" class="keyBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000" class="svg--icon">
+                        <path d="M0 0h24v24H0V0z" fill="none"/>
+                        <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21v-2z"/>
+                    </svg>
+                </button>
+                <button id="submit" class="keyBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000" class="svg--icon">
+                        <path d="M0 0h24v24H0V0z" fill="none"/>
+                        <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7h-2z"/>
+                    </svg>
+                </button>
+                <button id="close" class="keyBtn">Close Game</button>
+            </div>
+        </div>
+        <footer>
+            <nav>
+                <a href="https://pschwietzer.dev">pschwietzer.dev</a>
+                <a href="#">Github</a>
+            </nav>
+        </footer>
+    </div>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
